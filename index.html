@@ -485,13 +485,22 @@
     <!-- 页脚 -->
     <footer class="bg-gray-800 text-white p-4 mt-10">
         <div class="container-max mx-auto text-center text-sm">
-            &copy; Copyright 2025 Yi-Jun Li. Powered by <a href="https://tailwindcss.com/" target="_blank" class="text-blue-400 hover:text-blue-300">Tailwind CSS</a>.
-            
-            <p class="mt-1 text-gray-400">
-                Inspired by the al-folio theme.
-            </p>
+            <!-- 年份使用 span 标签，以便 JavaScript 自动更新 -->
+            &copy; Copyright <span id="current-year"></span> Yi-Jun Li.
         </div>
     </footer>
+
+    <!-- JavaScript for automatic year update -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // 获取显示年份的 span 元素
+            const yearSpan = document.getElementById('current-year');
+            if (yearSpan) {
+                // 设置 span 的文本内容为当前的年份
+                yearSpan.textContent = new Date().getFullYear();
+            }
+        });
+    </script>
 
 </body>
 </html>
