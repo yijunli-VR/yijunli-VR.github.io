@@ -46,9 +46,7 @@
                     <a href="#about" class="border-b-2 border-transparent text-gray-500 hover:border-blue-500 hover:text-gray-900 inline-flex items-center px-1 pt-1 text-sm font-medium transition duration-150">
                         About
                     </a>
-                    <a href="#news" class="border-b-2 border-transparent text-gray-500 hover:border-blue-500 hover:text-gray-900 inline-flex items-center px-1 pt-1 text-sm font-medium transition duration-150">
-                        News
-                    </a>
+                    <!-- 移除了 News 链接 -->
                     <a href="#publications" class="border-b-2 border-transparent text-gray-500 hover:border-blue-500 hover:text-gray-900 inline-flex items-center px-1 pt-1 text-sm font-medium transition duration-150">
                         Publications
                     </a>
@@ -74,8 +72,10 @@
                     
                     <!-- 联系图标 -->
                     <div class="flex space-x-4 mt-4 text-xl">
-                        <a href="mailto:your.email@example.com" title="Email" class="text-gray-500 hover:text-blue-600 transition"><i class="fas fa-envelope"></i></a>
-                        <a href="[Google Scholar Link]" title="Google Scholar" target="_blank" class="text-gray-500 hover:text-blue-600 transition"><i class="ai ai-google-scholar"></i></a>
+                        <!-- 更新 Email 链接 -->
+                        <a href="mailto:liyijun@mail.tsinghua.edu.cn" title="Email" class="text-gray-500 hover:text-blue-600 transition"><i class="fas fa-envelope"></i></a>
+                        <!-- 更新 Google Scholar 链接 -->
+                        <a href="https://scholar.google.com/citations?user=2h1R-cMAAAAJ&hl=en" title="Google Scholar" target="_blank" class="text-gray-500 hover:text-blue-600 transition"><i class="ai ai-google-scholar"></i></a>
                         <a href="[GitHub Link]" title="GitHub" target="_blank" class="text-gray-500 hover:text-blue-600 transition"><i class="fab fa-github"></i></a>
                         <a href="[LinkedIn Link]" title="LinkedIn" target="_blank" class="text-gray-500 hover:text-blue-600 transition"><i class="fab fa-linkedin"></i></a>
                     </div>
@@ -87,75 +87,32 @@
                         About Me
                     </h2>
 
-                    <!-- 仅保留英文简介 -->
+                    <!-- 简介内容更新：科研经历和学位信息整合到第一段，学位改为 Computer Science -->
                     <div>
                         <p class="text-lg leading-relaxed mb-4">
-                            I am currently a Postdoctoral Researcher at the Visual Media Research Center, <a href="[Tsinghua Link]" target="_blank" class="text-blue-600 hover:underline">Tsinghua University</a>, where I am supervised by Professor <a href="[Shimin Hu Link]" target="_blank" class="text-blue-600 hover:underline">Shimin Hu</a>. My research focuses on virtual avatar interaction and presentation in Virtual and Augmented Reality (VR/AR).
+                            I am currently a Postdoctoral Researcher at the Visual Media Research Center, <a href="[Tsinghua Link]" target="_blank" class="text-blue-600 hover:underline">Tsinghua University</a>, where I am supervised by Professor <a href="[Shimin Hu Link]" target="_blank" class="text-blue-600 hover:underline">Shimin Hu</a>. I received both my B.S. and Ph.D. degrees in Computer Science from <a href="[Beihang Link]" target="_blank" class="text-blue-600 hover:underline">Beihang University</a>. My doctoral studies were advised by Professor <a href="[Qinping Zhao Link]" target="_blank" class="text-blue-600 hover:underline">Qinping Zhao</a> and guided by Professor <a href="[Miao Wang Link]" target="_blank" class="text-blue-600 hover:underline">Miao Wang</a>. My doctoral research covered diverse areas in VR/AR, including panoramic video exploration, redirected walking, and multi-user collaboration.
                         </p>
+                        <!-- 研究兴趣统一归纳到第二段 -->
                         <p class="text-lg leading-relaxed mb-4">
-                            I received my Ph.D. in Computer Application Technology from <a href="[Beihang Link]" target="_blank" class="text-blue-600 hover:underline">Beihang University</a>, advised by Professor <a href="[Qinping Zhao Link]" target="_blank" class="text-blue-600 hover:underline">Qinping Zhao</a> and guided by Prof. <a href="[Miao Wang Link]" target="_blank" class="text-blue-600 hover:underline">Miao Wang</a>. My doctoral research covered diverse areas in VR/AR, including panoramic video exploration, redirected walking, and multi-user collaboration.
+                            My research interests lie broadly in Virtual and Augmented Reality (VR/AR), with a particular focus on virtual avatar interaction, presentation, and perception.
                         </p>
-                        <!-- 移除了关于论文总数、CCF 分级和专利的总结性文字 -->
                     </div>
 
                     <div class="mt-4 text-gray-600">
+                        <!-- 更新 Email 显示 -->
                         <p>
-                            Email: your.email@example.com
+                            Email: liyijun@mail.tsinghua.edu.cn
                         </p>
                         <p class="mt-1">
-                            <!-- 移除了 [CV] 链接，只保留 Google Scholar -->
-                            <a href="[Google Scholar Link]" target="_blank" class="text-blue-600 hover:underline font-medium">[Google Scholar]</a>
+                            <!-- 更新 Google Scholar 链接 -->
+                            <a href="https://scholar.google.com/citations?user=2h1R-cMAAAAJ&hl=en" target="_blank" class="text-blue-600 hover:underline font-medium">[Google Scholar]</a>
                         </p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- 新闻 (News) -->
-        <section id="news" class="bg-white p-6 md:p-10 rounded-xl shadow-lg mb-10">
-            <h2 class="text-2xl font-bold mb-4 border-b pb-2">
-                News
-            </h2>
-            <div class="overflow-x-auto">
-                <table class="min-w-full divide-y divide-gray-200">
-                    <tbody class="bg-white divide-y divide-gray-200">
-                        <!-- 最新 5 条新闻 (按时间倒序排列，仅保留论文/获奖相关) -->
-                        <tr>
-                            <td class="w-1/4 md:w-1/6 py-3 font-semibold text-gray-500">Feb, 2025</td>
-                            <td class="w-3/4 md:w-5/6 py-3">
-                                Paper [5] "Can I Get There?" received the **Best Paper Award** at IEEE VR 2025.
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="w-1/4 md:w-1/6 py-3 font-semibold text-gray-500">Feb, 2025</td>
-                            <td class="w-3/4 md:w-5/6 py-3">
-                                Paper [3] "Negotiated User-to-Group Teleportations" received the **Best Paper Award** at ISMAR 2025.
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="w-1/4 md:w-1/6 py-3 font-semibold text-gray-500">Jan, 2025</td>
-                            <td class="w-3/4 md:w-5/6 py-3">
-                                Four papers accepted for presentation at TVCG and ISMAR 2025 (Papers [1], [2], [4], [6]).
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="w-1/4 md:w-1/6 py-3 font-semibold text-gray-500">Dec, 2023</td>
-                            <td class="w-3/4 md:w-5/6 py-3">
-                                Paper [7] "SceneFusion" was published in IEEE Transactions on Visualization and Computer Graphics (TVCG 2023).
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="w-1/4 md:w-1/6 py-3 font-semibold text-gray-500">Mar, 2022</td>
-                            <td class="w-3/4 md:w-5/6 py-3">
-                                Paper [8] "Bullet comments for 360 video" was accepted to IEEE Virtual Reality (IEEE VR 2022).
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
-            </div>
-        </section>
-
-        <!-- 出版物 (Publications) -->
+         <!-- 出版物 (Publications) -->
         <section id="publications" class="bg-white p-6 md:p-10 rounded-xl shadow-lg mb-10">
             <h2 class="text-2xl font-bold mb-6 border-b pb-2">
                 Publications
